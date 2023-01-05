@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 10px;
+ 
+}
+
+h1 {
+    background:linear-gradient(to left,rgb(240, 11, 11),rgb(247, 194, 0),white,rgb(158, 222, 9),rgb(16, 239, 217));;
+  }
+  
+
+h2{
+    text-align:justify;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.951);
+    font-weight:900;
+   
+}
+
+body{
+   float: left;
+    background-image: url("../group project/blk.jpg");
+   background-size: cover;
+    background-color: rgba(255, 255, 255, 0.525);
+   
+   
+    
+}
+img{
+   
+    height: 400px;
+    width:400px;
+    border-radius: 120px;
+    float: right;
+}
+table{
+    
+    width: 50%;
+}
+
+h1 {margin-top:1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background:linear-gradient(to left,rgb(240, 11, 11),rgb(247, 194, 0),white,rgb(158, 222, 9),rgb(16, 239, 217));;
+  }
+  h1:before, h1:after {
+    color:white;
+    content:'';
+    font-size: 50px;
+    flex:1;
+    border-bottom:groove 2px;
+    margin:auto 0.25em;
+    box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+  }
+
+.nav-container {
+    color: white;
+    font-style: oblique;
+    float: left;
+    display: flex;
+   
+    
+}
+
+.nav-container img {
+    position:right;
+    right:0;
+    top:0;
+    }
+ .nav-container .table {
+        position:relative; 
+        padding-right:'images-width';
+        }
+
+.box1{
+    flex: 1;
+    width: 50%;
+}
+.box2{
+    flex: 1;
+}
+
+
+
+
+
+

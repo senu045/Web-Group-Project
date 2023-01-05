@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Foooddss!!</title>
+        <style>
+h1 {margin-top:1px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background:linear-gradient(to left,rgb(240, 11, 11),rgb(247, 194, 0),white,rgb(158, 222, 9),rgb(16, 239, 217));;
+  }
+  h1:before, h1:after {
+    color:white;
+    content:'';
+    font-size: 50px;
+    flex:1;
+    border-bottom:groove 2px;
+    margin:auto 0.25em;
+    box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+  }
+.flex-container-new{
+  display: flex;
+  flex-basis:content;
+  height: 75%;
+  width: 99%;
+  flex-flow: column wrap;
+  align-content: center; 
+  font-family: 'OpenSans, OpenSans-Regular';
+  background-color: beige;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  margin-top:5px;
+} 
+
+h2 { 
+    display: block;
+    font-size: 5em;
+    font-style: italic;
+    color:white;
+    text-decoration-style: wavy;
+    text-align: center;
+    clear:left;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+      }
+        </style>
+    </head>
+    <body background="fast-food-seamless-background-illustration-simple-restaurant-menu-background-vector.jpg" opacity: 0.75;> 
+<p align="left">
+<h1>SIGN UP-Register</h1></p><br>
+        <h2 ><pre>Welcome!!!.
+We are happy to see 
+you join with us.</pre></h2>
+<div class="flex-container-new">
+        <p align="left">
+    <form action="thanks.html" font-size="large">
+        <fieldset>
+            <legend>Join with our client's list</legend>
+            <p>Get more news about our food menu's and our new food launchings.All our new food products,updates and receipes will be sent to your
+                email in-box.
+            </p>
+            <ol>
+                <li>
+<label for="Firstlast">Name: </label> 
+<input type="text" name="fullname" id ="Firstlast"/>
+            </li>
+<li>
+<label for="Email">Email:</label>
+<input type="text" name="Email" id ="Email"/>
+</li>
+</ol>
+<a href="thanks.html" target="self"><button>Submit</button></a>
+        </fieldset>
+    </form></p></body>
+
+   </html>

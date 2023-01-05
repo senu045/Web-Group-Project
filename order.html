@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foooddss!!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {margin-top:1px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background:linear-gradient(to left,rgb(240, 11, 11),rgb(247, 194, 0),white,rgb(158, 222, 9),rgb(16, 239, 217));;
+  }
+  h1:before, h1:after {
+    color:white;
+    content:'';
+    font-size: 50px;
+    flex:1;
+    border-bottom:groove 2px;
+    margin:auto 0.25em;
+    box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+  }
+.class{
+    text-align: justify;
+    text-decoration: solid;
+}
+.flex-container {
+  display: flex; 
+  background-color: white; 
+  border-block-start-color: rgb(3, 3, 3);
+  padding: 50px;
+  margin: 25px;  }
+
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #8a5836f5;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-image: url(order.jpg);
+  background-image:cross-fade();
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+            </head>
+            
+    <body background="order1.jpg">
+<h1>Your order is important to us!!</h1>
+<br><br>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Place your order here!</h2>
+    <p>Swing by for a cup of coffee, or leave us your order.</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/w3images/map.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="thanks.html">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="pnumber">Contact Number</label>
+        <input type="text" id="pnumber" name="phonenumber" placeholder="Contact Number..">
+        <label for="Address">Address</label>
+        <input type="text" id="add" name="add" placeholder="Address..">
+        <label for="city">City</label>
+        <select id="city" name="city">
+          <option value="Colombo">Colombo</option>
+          <option value="Kelaniya">Kelaniya</option>
+          <option value="Wattala">Wattala</option>
+        </select>
+        <label for="order">Your Order</label>
+        <textarea id="order" name="order" placeholder="Place your oder here with the correct quantity...." style="height:170px"></textarea>
+        <a href="thanks.html"><input type="submit" value="Submit"></a>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+    </html>
